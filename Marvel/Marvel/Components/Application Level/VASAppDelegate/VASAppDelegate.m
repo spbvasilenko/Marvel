@@ -6,13 +6,13 @@
 //  Copyright © 2016 Igor Vasilenko. All rights reserved.
 //
 
-#import "AppDelegate.h"
+#import "VASAppDelegate.h"
 
-@interface AppDelegate ()
+@interface VASAppDelegate ()
 
 @end
 
-@implementation AppDelegate
+@implementation VASAppDelegate
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
