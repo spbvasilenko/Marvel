@@ -7,7 +7,7 @@
 
 @class RACSignal;
 
-@protocol VASMarvelAPIServiceProtocol <NSObject>
+@protocol VASMarvelAPIService <NSObject>
 
 #pragma mark - Marvel Characters
 - (RACSignal *)rac_getMarvelCharacters;

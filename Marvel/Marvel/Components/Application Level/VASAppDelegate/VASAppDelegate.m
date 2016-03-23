@@ -11,7 +11,7 @@
 
 @interface VASAppDelegate ()
 
-@property (strong, nonatomic, readwrite) VASRouter *router;
+@property (strong, nonatomic, readwrite) id <VASRouter> router;
 
 @end
 

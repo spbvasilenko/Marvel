@@ -5,10 +5,10 @@
 
 #import "TyphoonAssembly.h"
 
-@protocol VASSessionManagerProtocol;
+@protocol VASSessionManager;
 
 @interface VASCoreAssembly : TyphoonAssembly
 
-- (id <VASSessionManagerProtocol>)sessionManager;
+- (id <VASSessionManager>)sessionManager;
 
 @end

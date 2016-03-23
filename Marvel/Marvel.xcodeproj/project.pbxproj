@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		711AF0264774A1E0B6EFDC41 /* libPods-MarvelTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 591F8448FAC3F6317797BA85 /* libPods-MarvelTests.a */; };
 		74AD30E03958C2079B93BC18 /* VASStoryboardAssembly.m in Sources */ = {isa = PBXBuildFile; fileRef = 74AD35C77F0460EEE7C39517 /* VASStoryboardAssembly.m */; };
-		74AD310768B2A5588A873FE3 /* VASRouter.m in Sources */ = {isa = PBXBuildFile; fileRef = 74AD37EB141650C8A9C062C2 /* VASRouter.m */; };
+		74AD310768B2A5588A873FE3 /* VASRouterImpl.m in Sources */ = {isa = PBXBuildFile; fileRef = 74AD37EB141650C8A9C062C2 /* VASRouterImpl.m */; };
 		74AD31890B4B5733C030627B /* VASComicSummary.m in Sources */ = {isa = PBXBuildFile; fileRef = 74AD3D5C89EDFD70EB1E91FD /* VASComicSummary.m */; };
 		74AD32256F497064314B9FEA /* VASUrl.m in Sources */ = {isa = PBXBuildFile; fileRef = 74AD389EBB3BDE98A654C9F1 /* VASUrl.m */; };
 		74AD3248CFC331B356A16CD1 /* VASCharacterDataContainer.m in Sources */ = {isa = PBXBuildFile; fileRef = 74AD36F4ECA70D13E5364A13 /* VASCharacterDataContainer.m */; };
@@ -19,7 +19,7 @@
 		74AD35C1C30AD4D65B062285 /* VASMarvelCharacterInfoViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 74AD390731E327FD09156A5C /* VASMarvelCharacterInfoViewModel.m */; };
 		74AD35E805465EF938E4886B /* VASSessionResponseSerializer.m in Sources */ = {isa = PBXBuildFile; fileRef = 74AD3C042D0E6CFB5116264F /* VASSessionResponseSerializer.m */; };
 		74AD369E53EB89F01CCC06D1 /* VASCoreAssembly.m in Sources */ = {isa = PBXBuildFile; fileRef = 74AD312F0920B9BEAC34B5CC /* VASCoreAssembly.m */; };
-		74AD36A19CDADDFFBF19D334 /* VASMarvelAPIService.m in Sources */ = {isa = PBXBuildFile; fileRef = 74AD392CBC933C7FCD4894CD /* VASMarvelAPIService.m */; };
+		74AD36A19CDADDFFBF19D334 /* VASMarvelAPIServiceImpl.m in Sources */ = {isa = PBXBuildFile; fileRef = 74AD392CBC933C7FCD4894CD /* VASMarvelAPIServiceImpl.m */; };
 		74AD36BE4D8693F2CD486252 /* NSString+MD5.m in Sources */ = {isa = PBXBuildFile; fileRef = 74AD3863B598783240C80F9E /* NSString+MD5.m */; };
 		74AD372E6020305D4D92C190 /* VASParentAssembly.m in Sources */ = {isa = PBXBuildFile; fileRef = 74AD33E36387E8E6E471BDE2 /* VASParentAssembly.m */; };
 		74AD37D0CB92FCF9C0D245C4 /* VASSeriesList.m in Sources */ = {isa = PBXBuildFile; fileRef = 74AD3732CDB0E598613D3D9D /* VASSeriesList.m */; };
@@ -28,7 +28,7 @@
 		74AD399352D623FDCE169909 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 74AD30E52DD1682C28602464 /* Main.storyboard */; };
 		74AD39BAF79843A71799F9BF /* VASMarvelCharacterInfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 74AD3C3506E03F93390DA3C7 /* VASMarvelCharacterInfoViewController.m */; };
 		74AD39FEC846CEA2AFA98BA6 /* VASComicList.m in Sources */ = {isa = PBXBuildFile; fileRef = 74AD329F540EF1658FF83BE4 /* VASComicList.m */; };
-		74AD3A02EF49EA6A98B59C22 /* VASSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 74AD30B46462AB5655A40A84 /* VASSessionManager.m */; };
+		74AD3A02EF49EA6A98B59C22 /* VASSessionManagerImpl.m in Sources */ = {isa = PBXBuildFile; fileRef = 74AD30B46462AB5655A40A84 /* VASSessionManagerImpl.m */; };
 		74AD3A400DC1442C502E3766 /* VASMarvelCharactersListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 74AD34F6871EE147759C3215 /* VASMarvelCharactersListViewController.m */; };
 		74AD3A51D933BABA115811F8 /* VASStoryList.m in Sources */ = {isa = PBXBuildFile; fileRef = 74AD394AF8027F66473C5E37 /* VASStoryList.m */; };
 		74AD3AFE200E7D196D5A70B8 /* VASSeriesSummary.m in Sources */ = {isa = PBXBuildFile; fileRef = 74AD31E09607137BA73C54A1 /* VASSeriesSummary.m */; };
@@ -60,7 +60,7 @@
 		3A7EBE66AE6DF8C23C07B925 /* Pods-MarvelTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MarvelTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-MarvelTests/Pods-MarvelTests.release.xcconfig"; sourceTree = "<group>"; };
 		591F8448FAC3F6317797BA85 /* libPods-MarvelTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MarvelTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		63EC5D5491B498F5B090C89E /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
-		74AD30B46462AB5655A40A84 /* VASSessionManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VASSessionManager.m; sourceTree = "<group>"; };
+		74AD30B46462AB5655A40A84 /* VASSessionManagerImpl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VASSessionManagerImpl.m; sourceTree = "<group>"; };
 		74AD312F0920B9BEAC34B5CC /* VASCoreAssembly.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VASCoreAssembly.m; sourceTree = "<group>"; };
 		74AD3135E220EEC8C58D8653 /* VASStoryList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VASStoryList.h; sourceTree = "<group>"; };
 		74AD31B027EB815961D6B5C6 /* VASEventSummary.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VASEventSummary.h; sourceTree = "<group>"; };
@@ -72,37 +72,37 @@
 		74AD32E5CE3E2BD8123B6092 /* VASServiceComponentsAssembly.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VASServiceComponentsAssembly.h; sourceTree = "<group>"; };
 		74AD33219618A5F2A2D27150 /* VASEventList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VASEventList.h; sourceTree = "<group>"; };
 		74AD33507FADEDCF01A4AA15 /* VASCharacter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VASCharacter.m; sourceTree = "<group>"; };
-		74AD33C6BABBC308E80E5114 /* VASRouterProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VASRouterProtocol.h; sourceTree = "<group>"; };
+		74AD33C6BABBC308E80E5114 /* VASRouter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VASRouter.h; sourceTree = "<group>"; };
 		74AD33E36387E8E6E471BDE2 /* VASParentAssembly.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VASParentAssembly.m; sourceTree = "<group>"; };
 		74AD34090DAA20D489CACC96 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Marvel/Base.lproj/LaunchScreen.storyboard; sourceTree = SOURCE_ROOT; };
-		74AD348F0DD4E3DF9C553EF9 /* VASMarvelAPIService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VASMarvelAPIService.h; sourceTree = "<group>"; };
+		74AD348F0DD4E3DF9C553EF9 /* VASMarvelAPIServiceImpl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VASMarvelAPIServiceImpl.h; sourceTree = "<group>"; };
 		74AD34A4A0084CF1B0BC6819 /* NSString+MD5.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+MD5.h"; sourceTree = "<group>"; };
 		74AD34BAD59BDCC4C5D782EF /* VASCharacterDataContainer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VASCharacterDataContainer.h; sourceTree = "<group>"; };
 		74AD34E336E84012BDABE490 /* VASCharacterDataWrapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VASCharacterDataWrapper.h; sourceTree = "<group>"; };
 		74AD34F6871EE147759C3215 /* VASMarvelCharactersListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VASMarvelCharactersListViewController.m; sourceTree = "<group>"; };
 		74AD3540A96208A8C1FBE034 /* VASStorySummary.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VASStorySummary.m; sourceTree = "<group>"; };
-		74AD35853896A06A01F38BAD /* VASMarvelAPIServiceProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VASMarvelAPIServiceProtocol.h; sourceTree = "<group>"; };
+		74AD35853896A06A01F38BAD /* VASMarvelAPIService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VASMarvelAPIService.h; sourceTree = "<group>"; };
 		74AD35A9F11A5DDAD6BA3A1F /* VASStorySummary.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VASStorySummary.h; sourceTree = "<group>"; };
 		74AD35C77F0460EEE7C39517 /* VASStoryboardAssembly.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VASStoryboardAssembly.m; sourceTree = "<group>"; };
-		74AD35F4BD7184E973788F03 /* VASSessionManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VASSessionManager.h; sourceTree = "<group>"; };
+		74AD35F4BD7184E973788F03 /* VASSessionManagerImpl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VASSessionManagerImpl.h; sourceTree = "<group>"; };
 		74AD364953E9B9869FB5705A /* VASUrl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VASUrl.h; sourceTree = "<group>"; };
 		74AD3668B4B7C6F0203F4109 /* VASSeriesList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VASSeriesList.h; sourceTree = "<group>"; };
 		74AD36F4ECA70D13E5364A13 /* VASCharacterDataContainer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VASCharacterDataContainer.m; sourceTree = "<group>"; };
 		74AD370F18E02C95F6658FD6 /* VASMarvelCharacterInfoViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VASMarvelCharacterInfoViewModel.h; sourceTree = "<group>"; };
 		74AD3732CDB0E598613D3D9D /* VASSeriesList.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VASSeriesList.m; sourceTree = "<group>"; };
 		74AD377C125323F3B6558C71 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.info; path = Info.plist; sourceTree = "<group>"; };
-		74AD37EB141650C8A9C062C2 /* VASRouter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VASRouter.m; sourceTree = "<group>"; };
+		74AD37EB141650C8A9C062C2 /* VASRouterImpl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VASRouterImpl.m; sourceTree = "<group>"; };
 		74AD3841F50627EE1B3B262A /* VASImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VASImage.m; sourceTree = "<group>"; };
 		74AD3863B598783240C80F9E /* NSString+MD5.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+MD5.m"; sourceTree = "<group>"; };
 		74AD386FEE0FD27671BDE32C /* VASCoreAssembly.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VASCoreAssembly.h; sourceTree = "<group>"; };
 		74AD389EBB3BDE98A654C9F1 /* VASUrl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VASUrl.m; sourceTree = "<group>"; };
 		74AD38EBCF82687D6D0C5FDB /* VASComicList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VASComicList.h; sourceTree = "<group>"; };
 		74AD390731E327FD09156A5C /* VASMarvelCharacterInfoViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VASMarvelCharacterInfoViewModel.m; sourceTree = "<group>"; };
-		74AD392CBC933C7FCD4894CD /* VASMarvelAPIService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VASMarvelAPIService.m; sourceTree = "<group>"; };
+		74AD392CBC933C7FCD4894CD /* VASMarvelAPIServiceImpl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VASMarvelAPIServiceImpl.m; sourceTree = "<group>"; };
 		74AD394AF8027F66473C5E37 /* VASStoryList.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VASStoryList.m; sourceTree = "<group>"; };
 		74AD394BFE8147329AD3644F /* VASImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VASImage.h; sourceTree = "<group>"; };
 		74AD39B0305F11EBC50EFB2E /* VASSeriesSummary.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VASSeriesSummary.h; sourceTree = "<group>"; };
-		74AD39E1D740409E745EE59F /* VASRouter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VASRouter.h; sourceTree = "<group>"; };
+		74AD39E1D740409E745EE59F /* VASRouterImpl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VASRouterImpl.h; sourceTree = "<group>"; };
 		74AD3A011E4645ADE0B9EE8D /* VASMarvelCharactersListViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VASMarvelCharactersListViewModel.m; sourceTree = "<group>"; };
 		74AD3A0851BE6F7C43EBF834 /* VASEventList.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VASEventList.m; sourceTree = "<group>"; };
 		74AD3AAA2438FF19ECA735F6 /* VASMarvelCharactersListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VASMarvelCharactersListViewController.h; sourceTree = "<group>"; };
@@ -118,7 +118,7 @@
 		74AD3D359DEFAC90F386ECFA /* VASCharacterDataWrapper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VASCharacterDataWrapper.m; sourceTree = "<group>"; };
 		74AD3D5C89EDFD70EB1E91FD /* VASComicSummary.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VASComicSummary.m; sourceTree = "<group>"; };
 		74AD3DA2F0C69AF270756FA3 /* VASMarvelCharactersListViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VASMarvelCharactersListViewModel.h; sourceTree = "<group>"; };
-		74AD3DE7EA4A506C3034DA1C /* VASSessionManagerProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VASSessionManagerProtocol.h; sourceTree = "<group>"; };
+		74AD3DE7EA4A506C3034DA1C /* VASSessionManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VASSessionManager.h; sourceTree = "<group>"; };
 		74AD3DEC6225A6A0F064E252 /* VASServiceComponentsAssembly.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VASServiceComponentsAssembly.m; sourceTree = "<group>"; };
 		74AD3DFE3515CC5E7CFD2338 /* VASApplicationAssembly.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VASApplicationAssembly.m; sourceTree = "<group>"; };
 		74AD3E2E20C7A20D6A60E8B3 /* VASParentAssembly.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VASParentAssembly.h; sourceTree = "<group>"; };
@@ -294,7 +294,7 @@
 		74AD3436E55F90CD10C7DF31 /* Protocols */ = {
 			isa = PBXGroup;
 			children = (
-				74AD3DE7EA4A506C3034DA1C /* VASSessionManagerProtocol.h */,
+				74AD3DE7EA4A506C3034DA1C /* VASSessionManager.h */,
 			);
 			path = Protocols;
 			sourceTree = "<group>";
@@ -331,8 +331,8 @@
 		74AD359B92B66406D7998FD6 /* VASSessionManager */ = {
 			isa = PBXGroup;
 			children = (
-				74AD35F4BD7184E973788F03 /* VASSessionManager.h */,
-				74AD30B46462AB5655A40A84 /* VASSessionManager.m */,
+				74AD35F4BD7184E973788F03 /* VASSessionManagerImpl.h */,
+				74AD30B46462AB5655A40A84 /* VASSessionManagerImpl.m */,
 				74AD3436E55F90CD10C7DF31 /* Protocols */,
 				74AD30CDA6F440E53818AD82 /* VASJSONResponseSerializer */,
 				74AD394A24DB69ACB416A24C /* VASSessionResponseSerializer */,
@@ -377,8 +377,8 @@
 		74AD372C4EF7C12AEC00D187 /* Marvel API Service */ = {
 			isa = PBXGroup;
 			children = (
-				74AD392CBC933C7FCD4894CD /* VASMarvelAPIService.m */,
-				74AD348F0DD4E3DF9C553EF9 /* VASMarvelAPIService.h */,
+				74AD392CBC933C7FCD4894CD /* VASMarvelAPIServiceImpl.m */,
+				74AD348F0DD4E3DF9C553EF9 /* VASMarvelAPIServiceImpl.h */,
 				74AD397A5369F10362DC45D2 /* Protocols */,
 			);
 			path = "Marvel API Service";
@@ -387,7 +387,7 @@
 		74AD3751B7DC7FAF17A0F5D2 /* Protocols */ = {
 			isa = PBXGroup;
 			children = (
-				74AD33C6BABBC308E80E5114 /* VASRouterProtocol.h */,
+				74AD33C6BABBC308E80E5114 /* VASRouter.h */,
 			);
 			path = Protocols;
 			sourceTree = "<group>";
@@ -488,7 +488,7 @@
 		74AD397A5369F10362DC45D2 /* Protocols */ = {
 			isa = PBXGroup;
 			children = (
-				74AD35853896A06A01F38BAD /* VASMarvelAPIServiceProtocol.h */,
+				74AD35853896A06A01F38BAD /* VASMarvelAPIService.h */,
 			);
 			path = Protocols;
 			sourceTree = "<group>";
@@ -578,8 +578,8 @@
 		74AD3D263E5C6E828F849780 /* VASRouter */ = {
 			isa = PBXGroup;
 			children = (
-				74AD37EB141650C8A9C062C2 /* VASRouter.m */,
-				74AD39E1D740409E745EE59F /* VASRouter.h */,
+				74AD37EB141650C8A9C062C2 /* VASRouterImpl.m */,
+				74AD39E1D740409E745EE59F /* VASRouterImpl.h */,
 				74AD3751B7DC7FAF17A0F5D2 /* Protocols */,
 			);
 			path = VASRouter;
@@ -887,9 +887,9 @@
 				74AD3F8CDEBE4DCDAB745A87 /* VASEventSummary.m in Sources */,
 				74AD37D0CB92FCF9C0D245C4 /* VASSeriesList.m in Sources */,
 				74AD3AFE200E7D196D5A70B8 /* VASSeriesSummary.m in Sources */,
-				74AD310768B2A5588A873FE3 /* VASRouter.m in Sources */,
-				74AD3A02EF49EA6A98B59C22 /* VASSessionManager.m in Sources */,
-				74AD36A19CDADDFFBF19D334 /* VASMarvelAPIService.m in Sources */,
+				74AD310768B2A5588A873FE3 /* VASRouterImpl.m in Sources */,
+				74AD3A02EF49EA6A98B59C22 /* VASSessionManagerImpl.m in Sources */,
+				74AD36A19CDADDFFBF19D334 /* VASMarvelAPIServiceImpl.m in Sources */,
 				74AD369E53EB89F01CCC06D1 /* VASCoreAssembly.m in Sources */,
 				74AD3930B0259A7B1D708F74 /* VASJSONResponseSerializer.m in Sources */,
 				74AD35E805465EF938E4886B /* VASSessionResponseSerializer.m in Sources */,

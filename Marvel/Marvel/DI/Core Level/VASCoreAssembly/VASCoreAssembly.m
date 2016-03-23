@@ -4,15 +4,15 @@
 //
 
 #import "VASCoreAssembly.h"
-#import "VASSessionManagerProtocol.h"
 #import "VASSessionManager.h"
+#import "VASSessionManagerImpl.h"
 
 
 @implementation VASCoreAssembly
 
-- (id <VASSessionManagerProtocol>)sessionManager
+- (id <VASSessionManager>)sessionManager
 {
-    return [TyphoonDefinition withClass:[VASSessionManager class] configuration:^(TyphoonDefinition *definition) {
+    return [TyphoonDefinition withClass:[VASSessionManagerImpl class] configuration:^(TyphoonDefinition *definition) {
         [definition useInitializer:@selector(initWithSessionConfiguration:)
                         parameters:^(TyphoonMethod *initializer) {
                             [initializer injectParameterWith:[NSURLSessionConfiguration defaultSessionConfiguration]];

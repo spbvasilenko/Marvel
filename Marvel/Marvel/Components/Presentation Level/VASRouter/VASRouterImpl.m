@@ -4,17 +4,17 @@
 //
 
 #import <AFNetworking/AFURLResponseSerialization.h>
-#import "VASRouter.h"
+#import "VASRouterImpl.h"
 #import "TyphoonStoryboard.h"
 
-@interface VASRouter ()
+@interface VASRouterImpl ()
 
 @property (strong, nonatomic) UINavigationController *navigationController;
 @property (strong, nonatomic, readwrite) TyphoonStoryboard *storyboard;
 
 @end
 
-@implementation VASRouter
+@implementation VASRouterImpl
 
 - (instancetype)initWithNavigationController:(UINavigationController *)navigationController
 {

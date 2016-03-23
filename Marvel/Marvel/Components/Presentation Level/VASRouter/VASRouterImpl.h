@@ -4,12 +4,12 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "VASRouterProtocol.h"
+#import "VASRouter.h"
 
 @class TyphoonStoryboard;
 
 
-@interface VASRouter : NSObject <VASRouterProtocol>
+@interface VASRouterImpl : NSObject <VASRouter>
 
 @property (strong, nonatomic, readonly) TyphoonStoryboard *storyboard;
 

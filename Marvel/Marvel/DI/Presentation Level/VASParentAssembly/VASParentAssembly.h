@@ -6,13 +6,14 @@
 #import <Foundation/Foundation.h>
 #import "TyphoonAssembly.h"
 
-@class VASRouter;
+@class VASRouterImpl;
 @class VASStoryboardAssembly;
+@protocol VASRouter;
 
 @interface VASParentAssembly : TyphoonAssembly
 
 @property (strong, nonatomic, readonly) VASStoryboardAssembly *storyboardAssembly;
 
-- (VASRouter *)router;
+- (id <VASRouter>)router;
 
 @end

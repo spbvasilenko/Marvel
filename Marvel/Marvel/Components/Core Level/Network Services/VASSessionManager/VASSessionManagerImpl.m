@@ -5,12 +5,19 @@
 //  Copyright (c) 2015 Igor Vasilenko. All rights reserved.
 //
 
-#import "VASSessionManager.h"
+#import "VASSessionManagerImpl.h"
 
 #import "VASSessionResponseSerializer.h"
 #import "VASJSONResponseSerializer.h"
+#import <ReactiveCocoa/ReactiveCocoa.h>
 
-@implementation VASSessionManager
+@interface VASSessionManagerImpl ()
+
+@property (strong, nonatomic, readwrite) RACSignal *rac_reachabilitySignal;
+
+@end
+
+@implementation VASSessionManagerImpl
 
 - (instancetype)initWithSessionConfiguration:(NSURLSessionConfiguration *)configuration
 {
@@ -128,6 +135,30 @@
                                                  }
                                              }];
     return dataTask;
+}
+
+- (RACSignal *)rac_reachabilitySignal
+{
+    if (!_rac_reachabilitySignal) {
+        _rac_reachabilitySignal = [self reachabilitySignalWithManager:self.reachabilityManager];
+    }
+    return _rac_reachabilitySignal;
+}
+
+- (RACSignal *)reachabilitySignalWithManager:(AFNetworkReachabilityManager *)reachabilityManager
+{
+    RACSignal *reachableSignal = [RACSignal createSignal:^RACDisposable *(id<RACSubscriber> subscriber) {
+        [reachabilityManager setReachabilityStatusChangeBlock:^(AFNetworkReachabilityStatus status) {
+            [subscriber sendNext:@(status)];
+        }];
+        return [RACDisposable disposableWithBlock:^{
+            [reachabilityManager stopMonitoring];
+        }];
+    }].replayLast;
+
+    [reachabilityManager startMonitoring];
+
+    return reachableSignal;
 }
 
 @end

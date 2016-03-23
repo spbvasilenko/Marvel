@@ -5,13 +5,13 @@
 
 #import "TyphoonAssembly.h"
 
-@protocol VASMarvelAPIServiceProtocol;
+@protocol VASMarvelAPIService;
 @class VASCoreAssembly;
 
 @interface VASServiceComponentsAssembly : TyphoonAssembly
 
 @property (strong, nonatomic, readonly) VASCoreAssembly *coreAssembly;
 
-- (id <VASMarvelAPIServiceProtocol>)marvelAPIService;
+- (id <VASMarvelAPIService>)marvelAPIService;
 
 @end

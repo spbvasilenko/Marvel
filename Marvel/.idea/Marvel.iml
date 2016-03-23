@@ -43,15 +43,15 @@
       <sourceFolder url="file://$MODULE_DIR$/Marvel/Components/Core Level/Network Services/VASSessionManager/VASJSONResponseSerializer/VASJSONResponseSerializer.h" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Marvel/Components/Core Level/Network Services/VASSessionManager/VASSessionResponseSerializer/VASSessionResponseSerializer.h" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Marvel/Components/Core Level/Network Services/VASSessionManager/VASSessionResponseSerializer/VASSessionResponseSerializer.m" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/Marvel/Components/Core Level/Network Services/VASSessionManager/Protocols/VASSessionManagerProtocol.h" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/Marvel/Components/Core Level/Network Services/VASSessionManager/VASSessionManager.h" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/Marvel/Components/Core Level/Network Services/VASSessionManager/VASSessionManager.m" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/Marvel/Components/Presentation Level/VASRouter/Protocols/VASRouterProtocol.h" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/Marvel/Components/Presentation Level/VASRouter/VASRouter.m" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/Marvel/Components/Presentation Level/VASRouter/VASRouter.h" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/Marvel/Components/Business Logic Level/Marvel Services/Marvel API Service/Protocols/VASMarvelAPIServiceProtocol.h" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/Marvel/Components/Business Logic Level/Marvel Services/Marvel API Service/VASMarvelAPIService.h" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/Marvel/Components/Business Logic Level/Marvel Services/Marvel API Service/VASMarvelAPIService.m" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Marvel/Components/Core Level/Network Services/VASSessionManager/Protocols/VASSessionManager.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Marvel/Components/Core Level/Network Services/VASSessionManager/VASSessionManagerImpl.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Marvel/Components/Core Level/Network Services/VASSessionManager/VASSessionManagerImpl.m" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Marvel/Components/Presentation Level/VASRouter/Protocols/VASRouter.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Marvel/Components/Presentation Level/VASRouter/VASRouterImpl.m" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Marvel/Components/Presentation Level/VASRouter/VASRouterImpl.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Marvel/Components/Business Logic Level/Marvel Services/Marvel API Service/Protocols/VASMarvelAPIService.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Marvel/Components/Business Logic Level/Marvel Services/Marvel API Service/VASMarvelAPIServiceImpl.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Marvel/Components/Business Logic Level/Marvel Services/Marvel API Service/VASMarvelAPIServiceImpl.m" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Marvel/DI/Core Level/VASCoreAssembly/VASCoreAssembly.h" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Marvel/DI/Core Level/VASCoreAssembly/VASCoreAssembly.m" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Marvel/DI/Presentation Level/VASStoryboardAssembly/VASStoryboardAssembly.h" isTestSource="false" />

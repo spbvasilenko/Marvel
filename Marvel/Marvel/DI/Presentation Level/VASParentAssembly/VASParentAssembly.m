@@ -4,7 +4,7 @@
 //
 
 #import "VASParentAssembly.h"
-#import "VASRouter.h"
+#import "VASRouterImpl.h"
 #import "VASStoryboardAssembly.h"
 
 @interface VASParentAssembly ()
@@ -15,9 +15,9 @@
 
 @implementation VASParentAssembly
 
-- (VASRouter *)router
+- (id <VASRouter>)router
 {
-    return [TyphoonDefinition withClass:[VASRouter class] configuration:^(TyphoonDefinition *definition) {
+    return [TyphoonDefinition withClass:[VASRouterImpl class] configuration:^(TyphoonDefinition *definition) {
         [definition injectProperty:@selector(storyboard) with:[self.storyboardAssembly mainStoryboard]];
         [definition useInitializer:@selector(initWithNavigationController:) parameters:^(TyphoonMethod *initializer) {
             [initializer injectParameterWith:[[UINavigationController alloc] init]];

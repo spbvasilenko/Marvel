@@ -5,6 +5,8 @@
 
 #import <Foundation/Foundation.h>
 
+@class RACSignal;
+
 typedef void(^SessionManagerCompletionBlockWithSuccess)(NSURLSessionDataTask *task, id responseObject);
 typedef void(^SessionManagerCompletionBlockWithFailure)(NSURLSessionDataTask *task, NSError *error);
 
@@ -16,7 +18,9 @@ typedef NS_ENUM(NSUInteger, VASHTTPMethod) {
     VASHTTPMethodDELETE
 };
 
-@protocol VASSessionManagerProtocol <NSObject>
+@protocol VASSessionManager <NSObject>
+
+@property (strong, nonatomic, readonly) RACSignal *rac_reachabilitySignal;
 
 - (NSURLSessionDataTask *)method:(VASHTTPMethod)method
                        URLString:(NSString *)URLString

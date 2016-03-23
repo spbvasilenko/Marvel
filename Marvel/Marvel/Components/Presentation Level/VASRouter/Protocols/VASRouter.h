@@ -5,7 +5,7 @@
 
 #import <UIKit/UIKit.h>
 
-@protocol VASRouterProtocol <NSObject>
+@protocol VASRouter <NSObject>
 
 #pragma mark - Navigation
 

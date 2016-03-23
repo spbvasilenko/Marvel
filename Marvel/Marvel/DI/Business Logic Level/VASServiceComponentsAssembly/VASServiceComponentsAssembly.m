@@ -4,9 +4,9 @@
 //
 
 #import "VASServiceComponentsAssembly.h"
-#import "VASMarvelAPIServiceProtocol.h"
-#import "VASCoreAssembly.h"
 #import "VASMarvelAPIService.h"
+#import "VASCoreAssembly.h"
+#import "VASMarvelAPIServiceImpl.h"
 
 @interface VASServiceComponentsAssembly ()
 
@@ -16,9 +16,9 @@
 
 @implementation VASServiceComponentsAssembly
 
-- (id <VASMarvelAPIServiceProtocol>)marvelAPIService
+- (id <VASMarvelAPIService>)marvelAPIService
 {
-    return [TyphoonDefinition withClass:[VASMarvelAPIService class] configuration:^(TyphoonDefinition *definition) {
+    return [TyphoonDefinition withClass:[VASMarvelAPIServiceImpl class] configuration:^(TyphoonDefinition *definition) {
         [definition injectProperty:@selector(sessionManager) with:[self.coreAssembly sessionManager]];
     }];
 }

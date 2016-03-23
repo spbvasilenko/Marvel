@@ -3,20 +3,20 @@
 // Copyright (c) 2016 Igor Vasilenko. All rights reserved.
 //
 
-#import "VASMarvelAPIService.h"
+#import "VASMarvelAPIServiceImpl.h"
 #import "RACSignal.h"
-#import "VASSessionManager.h"
 #import "VASCharacterDataWrapper.h"
+#import "VASSessionManager.h"
 #import <ReactiveCocoa/ReactiveCocoa.h>
+#import <AFNetworking/AFNetworkReachabilityManager.h>
 
-@interface VASMarvelAPIService ()
+@interface VASMarvelAPIServiceImpl ()
 
-@property (strong, nonatomic, readwrite) VASSessionManager *sessionManager;
-@property (strong, nonatomic, readwrite) RACSignal *rac_reachabilitySignal;
+@property (strong, nonatomic, readwrite) id <VASSessionManager> sessionManager;
 
 @end
 
-@implementation VASMarvelAPIService
+@implementation VASMarvelAPIServiceImpl
 
 - (RACSignal *)rac_getMarvelCharacters
 {
@@ -41,32 +41,6 @@
             [dataTask cancel];
         }];
     }];
-}
-
-#pragma mark - Helpers
-
-- (RACSignal *)rac_reachabilitySignal
-{
-    if (!_rac_reachabilitySignal) {
-        _rac_reachabilitySignal = [self reachabilitySignalWithManager:self.sessionManager.reachabilityManager];
-    }
-    return _rac_reachabilitySignal;
-}
-
-- (RACSignal *)reachabilitySignalWithManager:(AFNetworkReachabilityManager *)reachabilityManager
-{
-    RACSignal *reachableSignal = [RACSignal createSignal:^RACDisposable *(id<RACSubscriber> subscriber) {
-        [reachabilityManager setReachabilityStatusChangeBlock:^(AFNetworkReachabilityStatus status) {
-            [subscriber sendNext:@(status)];
-        }];
-        return [RACDisposable disposableWithBlock:^{
-            [reachabilityManager stopMonitoring];
-        }];
-    }].replayLast;
-
-    [reachabilityManager startMonitoring];
-
-    return reachableSignal;
 }
 
 @end

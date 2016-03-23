@@ -8,12 +8,12 @@
 
 #import <UIKit/UIKit.h>
 
-@class VASRouter;
-@protocol VASMarvelAPIServiceProtocol;
+@protocol VASMarvelAPIService;
+@protocol VASRouter;
 
 @interface VASAppDelegate : UIResponder <UIApplicationDelegate>
 
-@property (strong, nonatomic, readonly) VASRouter *router;
+@property (strong, nonatomic, readonly) id <VASRouter> router;
 @property (strong, nonatomic) UIWindow *window;
 
 
