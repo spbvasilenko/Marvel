@@ -40,6 +40,8 @@
     }];
 }
 
+#pragma mark - UITableViewDataSource
+
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
 {
     return [self.viewModel.sectionTitles count];
