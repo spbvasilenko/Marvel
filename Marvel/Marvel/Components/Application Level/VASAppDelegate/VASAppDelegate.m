@@ -20,6 +20,14 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     [self cacheSetup];
+
+    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+    self.window.backgroundColor = [UIColor whiteColor];
+
+    [self.router openMarvelCharactersListViewController];
+
+    self.window.rootViewController = self.router.navigationController;
+    [self.window makeKeyAndVisible];
     
     return YES;
 }

@@ -35,6 +35,7 @@
 		74AD3BE459A8C70813E6E366 /* VASAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 74AD3242B1EC82D0399B1D22 /* VASAppDelegate.m */; };
 		74AD3D145E3F0D6E738362B3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 74AD3746C934F35773123E9E /* LaunchScreen.storyboard */; };
 		74AD3D7B7FDAB66F8E152D0E /* VASCharacterDataWrapper.m in Sources */ = {isa = PBXBuildFile; fileRef = 74AD3D359DEFAC90F386ECFA /* VASCharacterDataWrapper.m */; };
+		74AD3DAF490F91C87162389B /* VASMarvelCharactersUserStoryAssembly.m in Sources */ = {isa = PBXBuildFile; fileRef = 74AD3E62B44FC322D6D8F99F /* VASMarvelCharactersUserStoryAssembly.m */; };
 		74AD3E0FAF1DE42191797A87 /* VASCharacter.m in Sources */ = {isa = PBXBuildFile; fileRef = 74AD33507FADEDCF01A4AA15 /* VASCharacter.m */; };
 		74AD3F0D0ACAE2374DF1C798 /* VASApplicationAssembly.m in Sources */ = {isa = PBXBuildFile; fileRef = 74AD3DFE3515CC5E7CFD2338 /* VASApplicationAssembly.m */; };
 		74AD3F3B1EAB756436E078CC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 74AD3BC6218C5EBD649F056C /* Assets.xcassets */; };
@@ -87,6 +88,7 @@
 		74AD35F4BD7184E973788F03 /* VASSessionManagerImpl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VASSessionManagerImpl.h; sourceTree = "<group>"; };
 		74AD364953E9B9869FB5705A /* VASUrl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VASUrl.h; sourceTree = "<group>"; };
 		74AD3668B4B7C6F0203F4109 /* VASSeriesList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VASSeriesList.h; sourceTree = "<group>"; };
+		74AD36BE6FE6F04E2A3D7BB9 /* VASMarvelCharactersUserStory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VASMarvelCharactersUserStory.h; sourceTree = "<group>"; };
 		74AD36F4ECA70D13E5364A13 /* VASCharacterDataContainer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VASCharacterDataContainer.m; sourceTree = "<group>"; };
 		74AD370F18E02C95F6658FD6 /* VASMarvelCharacterInfoViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VASMarvelCharacterInfoViewModel.h; sourceTree = "<group>"; };
 		74AD3732CDB0E598613D3D9D /* VASSeriesList.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VASSeriesList.m; sourceTree = "<group>"; };
@@ -95,6 +97,7 @@
 		74AD3841F50627EE1B3B262A /* VASImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VASImage.m; sourceTree = "<group>"; };
 		74AD3863B598783240C80F9E /* NSString+MD5.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+MD5.m"; sourceTree = "<group>"; };
 		74AD386FEE0FD27671BDE32C /* VASCoreAssembly.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VASCoreAssembly.h; sourceTree = "<group>"; };
+		74AD389BE196C17A24BC1BF3 /* VASMarvelCharactersUserStoryAssembly.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VASMarvelCharactersUserStoryAssembly.h; sourceTree = "<group>"; };
 		74AD389EBB3BDE98A654C9F1 /* VASUrl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VASUrl.m; sourceTree = "<group>"; };
 		74AD38EBCF82687D6D0C5FDB /* VASComicList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VASComicList.h; sourceTree = "<group>"; };
 		74AD390731E327FD09156A5C /* VASMarvelCharacterInfoViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VASMarvelCharacterInfoViewModel.m; sourceTree = "<group>"; };
@@ -122,6 +125,7 @@
 		74AD3DEC6225A6A0F064E252 /* VASServiceComponentsAssembly.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VASServiceComponentsAssembly.m; sourceTree = "<group>"; };
 		74AD3DFE3515CC5E7CFD2338 /* VASApplicationAssembly.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VASApplicationAssembly.m; sourceTree = "<group>"; };
 		74AD3E2E20C7A20D6A60E8B3 /* VASParentAssembly.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VASParentAssembly.h; sourceTree = "<group>"; };
+		74AD3E62B44FC322D6D8F99F /* VASMarvelCharactersUserStoryAssembly.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VASMarvelCharactersUserStoryAssembly.m; sourceTree = "<group>"; };
 		74AD3EA88B9F16A7E99E3272 /* VASJSONResponseSerializer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VASJSONResponseSerializer.m; sourceTree = "<group>"; };
 		74AD3EAF9E2E0C0670FDB96B /* VASComicSummary.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VASComicSummary.h; sourceTree = "<group>"; };
 		74AD3EDC303932787C2A7520 /* VASStoryboardAssembly.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VASStoryboardAssembly.h; sourceTree = "<group>"; };
@@ -608,6 +612,9 @@
 		74AD3E3E52FCA8018209031A /* VASMarvelCharactersUserStoryAssembly */ = {
 			isa = PBXGroup;
 			children = (
+				74AD3E62B44FC322D6D8F99F /* VASMarvelCharactersUserStoryAssembly.m */,
+				74AD389BE196C17A24BC1BF3 /* VASMarvelCharactersUserStoryAssembly.h */,
+				74AD36BE6FE6F04E2A3D7BB9 /* VASMarvelCharactersUserStory.h */,
 			);
 			path = VASMarvelCharactersUserStoryAssembly;
 			sourceTree = "<group>";
@@ -898,6 +905,7 @@
 				74AD3F0D0ACAE2374DF1C798 /* VASApplicationAssembly.m in Sources */,
 				74AD30E03958C2079B93BC18 /* VASStoryboardAssembly.m in Sources */,
 				74AD36BE4D8693F2CD486252 /* NSString+MD5.m in Sources */,
+				74AD3DAF490F91C87162389B /* VASMarvelCharactersUserStoryAssembly.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

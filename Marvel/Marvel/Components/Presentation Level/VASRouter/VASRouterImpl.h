@@ -7,11 +7,13 @@
 #import "VASRouter.h"
 
 @class TyphoonStoryboard;
+@protocol VASMarvelCharactersUserStory;
 
 
 @interface VASRouterImpl : NSObject <VASRouter>
 
-@property (strong, nonatomic, readonly) TyphoonStoryboard *storyboard;
+@property (strong, nonatomic) UINavigationController *navigationController;
+@property (strong, nonatomic, readonly, nonnull) id <VASMarvelCharactersUserStory> marvelCharactersUserStory;
 
 #pragma mark - Init
 - (nonnull instancetype)initWithNavigationController:(nonnull UINavigationController *)navigationController;

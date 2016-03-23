@@ -9,10 +9,11 @@
 @class VASRouterImpl;
 @class VASStoryboardAssembly;
 @protocol VASRouter;
+@class VASMarvelCharactersUserStoryAssembly;
 
 @interface VASParentAssembly : TyphoonAssembly
 
-@property (strong, nonatomic, readonly) VASStoryboardAssembly *storyboardAssembly;
+@property (strong, nonatomic, readonly) VASMarvelCharactersUserStoryAssembly *marvelCharactersUserStoryAssembly;
 
 - (id <VASRouter>)router;
 

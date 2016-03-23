@@ -4,10 +4,18 @@
 //
 
 #import "VASMarvelCharactersListViewController.h"
+#import "VASMarvelCharactersListViewModel.h"
+#import "VASMarvelCharacterInfoViewController.h"
+#import "VASCharacter.h"
 
 
 @implementation VASMarvelCharactersListViewController
 
+- (void)viewDidLoad
+{
+    [super viewDidLoad];
 
+    self.title = @"Marvel";
+}
 
 @end

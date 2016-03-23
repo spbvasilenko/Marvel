@@ -4,10 +4,11 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <Typhoon/Typhoon.h>
 
 @class TyphoonStoryboard;
 
-@interface VASStoryboardAssembly : NSObject
+@interface VASStoryboardAssembly : TyphoonAssembly
 
 - (TyphoonStoryboard *)mainStoryboard;
 

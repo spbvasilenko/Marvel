@@ -6,10 +6,11 @@
 #import "VASParentAssembly.h"
 #import "VASRouterImpl.h"
 #import "VASStoryboardAssembly.h"
+#import "VASMarvelCharactersUserStoryAssembly.h"
 
 @interface VASParentAssembly ()
 
-@property (strong, nonatomic, readwrite) VASStoryboardAssembly *storyboardAssembly;
+@property (strong, nonatomic, readwrite) VASMarvelCharactersUserStoryAssembly *marvelCharactersUserStoryAssembly;
 
 @end
 
@@ -18,7 +19,7 @@
 - (id <VASRouter>)router
 {
     return [TyphoonDefinition withClass:[VASRouterImpl class] configuration:^(TyphoonDefinition *definition) {
-        [definition injectProperty:@selector(storyboard) with:[self.storyboardAssembly mainStoryboard]];
+        [definition injectProperty:@selector(marvelCharactersUserStory) with:self.marvelCharactersUserStoryAssembly];
         [definition useInitializer:@selector(initWithNavigationController:) parameters:^(TyphoonMethod *initializer) {
             [initializer injectParameterWith:[[UINavigationController alloc] init]];
         }];

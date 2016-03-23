@@ -5,9 +5,14 @@
 
 #import <UIKit/UIKit.h>
 
+@class VASCharacter;
+
 @protocol VASRouter <NSObject>
 
-#pragma mark - Navigation
+@property (strong, nonatomic) UINavigationController *navigationController;
 
+#pragma mark - Navigation
+- (void)openMarvelCharactersListViewController;
+- (void)openMarvelCharacterInfoControllerWithCharacter:(VASCharacter *)character;
 
 @end

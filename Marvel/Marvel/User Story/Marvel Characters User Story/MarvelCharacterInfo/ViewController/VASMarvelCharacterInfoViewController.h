@@ -5,6 +5,11 @@
 
 #import <UIKit/UIKit.h>
 
+@class VASMarvelCharacterInfoViewModel;
+
 
 @interface VASMarvelCharacterInfoViewController : UIViewController
+
+@property (strong, nonatomic) VASMarvelCharacterInfoViewModel *viewModel;
+
 @end

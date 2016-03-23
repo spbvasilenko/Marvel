@@ -8,7 +8,7 @@
         <!--Marvel Character Info View Controller-->
         <scene sceneID="Pcj-RR-QSd">
             <objects>
-                <viewController id="cDK-Xb-3I9" customClass="VASMarvelCharacterInfoViewController" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="marvelCharacterInfoViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="cDK-Xb-3I9" customClass="VASMarvelCharacterInfoViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="5bp-dH-k95"/>
                         <viewControllerLayoutGuide type="bottom" id="4ke-QZ-yRf"/>
@@ -27,7 +27,7 @@
         <!--Marvel Characters List View Controller-->
         <scene sceneID="GDH-dw-Qay">
             <objects>
-                <tableViewController id="9jv-Z9-Phg" customClass="VASMarvelCharactersListViewController" sceneMemberID="viewController">
+                <tableViewController storyboardIdentifier="marvelCharactersListViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="9jv-Z9-Phg" customClass="VASMarvelCharactersListViewController" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="LOu-JK-yC9">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -51,7 +51,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jsP-5I-wBe" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-168" y="202"/>
+            <point key="canvasLocation" x="-284" y="207"/>
         </scene>
     </scenes>
 </document>

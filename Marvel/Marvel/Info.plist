@@ -43,6 +43,8 @@
 	</dict>
 	<key>TyphoonInitialAssemblies</key>
 	<array>
+		<string>VASStoryboardAssembly</string>
+		<string>VASMarvelCharactersUserStoryAssembly</string>
 		<string>VASCoreAssembly</string>
 		<string>VASServiceComponentsAssembly</string>
 		<string>VASApplicationAssembly</string>

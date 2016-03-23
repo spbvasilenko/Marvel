@@ -5,8 +5,10 @@
 
 #import <UIKit/UIKit.h>
 
+@class VASMarvelCharactersListViewModel;
+
 @interface VASMarvelCharactersListViewController : UITableViewController
 
-
+@property (strong, nonatomic) VASMarvelCharactersListViewModel *viewModel;
 
 @end

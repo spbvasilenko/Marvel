@@ -11,5 +11,6 @@
 
 #pragma mark - Marvel Characters
 - (RACSignal *)rac_getMarvelCharacters;
+- (RACSignal *)rac_getMarvelCharacterWithId:(NSInteger)characterId;
 
 @end

@@ -4,6 +4,7 @@
 //
 
 #import "VASMarvelCharacterInfoViewController.h"
+#import "VASMarvelCharacterInfoViewModel.h"
 
 
 @implementation VASMarvelCharacterInfoViewController
