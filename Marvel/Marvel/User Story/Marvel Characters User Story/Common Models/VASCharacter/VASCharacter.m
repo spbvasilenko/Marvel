@@ -16,7 +16,13 @@
 
 + (NSDictionary *)JSONKeyPathsByPropertyKey
 {
-    return @{};
+    return
+            @{
+                    NSStringFromSelector(@selector(uid)) : @"id",
+                    NSStringFromSelector(@selector(characterDescription)) : @"description"
+            };
 }
+
+
 
 @end

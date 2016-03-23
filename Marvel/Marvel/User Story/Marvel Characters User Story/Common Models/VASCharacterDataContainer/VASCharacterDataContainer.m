@@ -14,4 +14,9 @@
     return @{};
 }
 
++ (NSValueTransformer *)resultsJSONTransformer
+{
+    return [MTLJSONAdapter arrayTransformerWithModelClass:[VASCharacter class]];
+}
+
 @end

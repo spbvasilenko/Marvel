@@ -14,9 +14,9 @@ PODS:
   - AFNetworking/Serialization (3.0.4)
   - AFNetworking/UIKit (3.0.4):
     - AFNetworking/NSURLSession
-  - Mantle (2.0.6):
-    - Mantle/extobjc (= 2.0.6)
-  - Mantle/extobjc (2.0.6)
+  - Mantle (2.0):
+    - Mantle/extobjc (= 2.0)
+  - Mantle/extobjc (2.0)
   - RamblerTyphoonUtils/AssemblyTesting (1.2.0)
   - ReactiveCocoa (2.5):
     - ReactiveCocoa/UI (= 2.5)
@@ -33,7 +33,7 @@ PODS:
 
 DEPENDENCIES:
   - AFNetworking
-  - Mantle
+  - Mantle (= 2.0)
   - RamblerTyphoonUtils/AssemblyTesting
   - ReactiveCocoa (= 2.5)
   - ReactiveViewModel
@@ -41,7 +41,7 @@ DEPENDENCIES:
 
 SPEC CHECKSUMS:
   AFNetworking: a0075feb321559dc78d9d85b55d11caa19eabb93
-  Mantle: 299966b00759634931699f69cb6a30b9239b944d
+  Mantle: d7c75b6fb789b20f7ae30cd0d09435fe545896ff
   RamblerTyphoonUtils: 814c02d7a0136a164efaae1133f47db1e4579cd0
   ReactiveCocoa: e2db045570aa97c695e7aa97c2bcab222ae51f4a
   ReactiveViewModel: 58918dcbcec2d3151195ab1ed9163c57a8163999

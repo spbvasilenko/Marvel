@@ -14,9 +14,9 @@
     return @{};
 }
 
-- (NSValueTransformer *)dataJSONTransformer
++ (NSValueTransformer *)dataJSONTransformer
 {
-    return [NSValueTransformer mtl_validatingTransformerForClass:[VASCharacterDataContainer class]];
+    return [MTLJSONAdapter dictionaryTransformerWithModelClass:[VASCharacterDataContainer class]];
 }
 
 @end
