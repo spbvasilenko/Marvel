@@ -3,10 +3,24 @@
 // Copyright (c) 2016 Igor Vasilenko. All rights reserved.
 //
 
+#import <AFNetworking/AFURLResponseSerialization.h>
 #import "VASRouter.h"
 
+@interface VASRouter ()
 
-@implementation VASRouter {
+@property (strong, nonatomic) UINavigationController *navigationController;
 
+@end
+
+@implementation VASRouter
+
+- (instancetype)initWithNavigationController:(UINavigationController *)navigationController
+{
+    self = [super init];
+    if (self) {
+        self.navigationController = navigationController;
+    }
+    return self;
 }
+
 @end

@@ -116,7 +116,7 @@
         modifiedRequest.cachePolicy = NSURLRequestReturnCacheDataDontLoad;
     }
 
-    NSURLSessionDataTask *dataTask = [self dataTaskWithRequest:urlRequest
+    NSURLSessionDataTask *dataTask = [self dataTaskWithRequest:modifiedRequest
                                              completionHandler:^(NSURLResponse *response, id responseObject, NSError *error) {
                                                  if (error)
                                                  {

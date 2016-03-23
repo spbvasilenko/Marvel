@@ -36,5 +36,17 @@
 		<string>UIInterfaceOrientationLandscapeLeft</string>
 		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
+	<key>NSAppTransportSecurity</key>
+	<dict>
+		<key>NSAllowsArbitraryLoads</key>
+		<true/>
+	</dict>
+	<key>TyphoonInitialAssemblies</key>
+	<array>
+		<string>VASCoreAssembly</string>
+		<string>VASServiceComponentsAssembly</string>
+		<string>VASApplicationAssembly</string>
+		<string>VASParentAssembly</string>
+	</array>
 </dict>
 </plist>

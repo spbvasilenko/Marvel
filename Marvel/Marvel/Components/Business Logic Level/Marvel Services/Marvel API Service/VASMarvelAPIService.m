@@ -18,13 +18,13 @@
 
 @implementation VASMarvelAPIService
 
-- (RACSignal *)rac_getMarvelCharactersList
+- (RACSignal *)rac_getMarvelCharacters
 {
     return [RACSignal createSignal:^RACDisposable *(id <RACSubscriber> subscriber) {
 
         NSURLSessionDataTask *dataTask = [self.sessionManager method:VASHTTPMethodGET
-                                                           URLString:@"http://developer.marvel.com/v1/public/characters"
-                                                          parameters:nil
+                                                           URLString:@"http://gateway.marvel.com:80/v1/public/characters"
+                                                          parameters:@{@"apikey" : @"6232fb1fbddf303ee3773920bb6754d8"}
                                                          resultClass:[VASCharacterDataWrapper class]
                                                               forKey:nil
                                                              success:^(NSURLSessionDataTask *task, id responseObject) {
@@ -35,6 +35,7 @@
                                                                  [subscriber sendError:error];
                                                                  [subscriber sendCompleted];
                                                              }];
+        [dataTask resume];
 
         return [RACDisposable disposableWithBlock:^{
             [dataTask cancel];

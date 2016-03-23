@@ -4,7 +4,12 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "VASRouterProtocol.h"
 
 
-@interface VASRouter : NSObject
+@interface VASRouter : NSObject <VASRouterProtocol>
+
+#pragma mark - Init
+- (nonnull instancetype)initWithNavigationController:(nonnull UINavigationController *)navigationController;
+
 @end

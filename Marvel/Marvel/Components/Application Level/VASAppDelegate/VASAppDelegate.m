@@ -7,17 +7,25 @@
 //
 
 #import "VASAppDelegate.h"
+#import "VASRouter.h"
+#import "VASMarvelAPIServiceProtocol.h"
+#import "RACSignal.h"
 
 @interface VASAppDelegate ()
+
+@property (strong, nonatomic, readwrite) VASRouter *router;
 
 @end
 
 @implementation VASAppDelegate
 
-
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     [self cacheSetup];
+
+    [[self.marvelAPIService rac_getMarvelCharacters] subscribeNext:^(id x) {
+        NSLog(@"");
+    }];
     
     return YES;
 }

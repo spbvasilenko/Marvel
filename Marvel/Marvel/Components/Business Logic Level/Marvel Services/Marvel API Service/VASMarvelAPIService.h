@@ -4,16 +4,15 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "VASMarvelAPIServiceProtocol.h"
 
 @class RACSignal;
 @class VASSessionManager;
 
 
-@interface VASMarvelAPIService : NSObject
+@interface VASMarvelAPIService : NSObject <VASMarvelAPIServiceProtocol>
 
 @property (strong, nonatomic, readonly) VASSessionManager *sessionManager;
 @property (strong, nonatomic, readonly) RACSignal *rac_reachabilitySignal;
-
-- (RACSignal *)rac_getMarvelCharactersList;
 
 @end
