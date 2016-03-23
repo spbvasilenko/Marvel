@@ -65,6 +65,8 @@
       <sourceFolder url="file://$MODULE_DIR$/Marvel/Info.plist" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Marvel/main.m" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Marvel/Resources/Assets.xcassets" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Marvel/Utils/Categories/NSString+MD5.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Marvel/Utils/Categories/NSString+MD5.m" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Marvel/Base.lproj/LaunchScreen.storyboard" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Marvel/Base.lproj/Main.storyboard" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/MarvelTests/Info.plist" isTestSource="false" />
