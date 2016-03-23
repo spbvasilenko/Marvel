@@ -3,8 +3,8 @@
 // Copyright (c) 2016 Igor Vasilenko. All rights reserved.
 //
 
-#import <Foundation/Foundation.h>
+#import <UIKit/UIKit.h>
 
 
-@interface VASMarvelCharacterInfoViewController : NSObject
+@interface VASMarvelCharacterInfoViewController : UIViewController
 @end

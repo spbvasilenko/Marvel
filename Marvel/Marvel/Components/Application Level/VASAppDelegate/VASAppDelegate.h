@@ -13,7 +13,6 @@
 
 @interface VASAppDelegate : UIResponder <UIApplicationDelegate>
 
-@property (strong, nonatomic) id <VASMarvelAPIServiceProtocol> marvelAPIService;
 @property (strong, nonatomic, readonly) VASRouter *router;
 @property (strong, nonatomic) UIWindow *window;
 

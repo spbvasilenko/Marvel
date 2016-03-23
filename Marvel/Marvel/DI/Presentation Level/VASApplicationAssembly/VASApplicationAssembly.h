@@ -14,7 +14,6 @@
 @interface VASApplicationAssembly : TyphoonAssembly
 
 @property (strong, nonatomic, readonly) VASParentAssembly *parentAssembly;
-@property (strong, nonatomic) VASServiceComponentsAssembly *serviceComponentsAssembly;
 
 - (VASAppDelegate *)appDelegate;
 

@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		711AF0264774A1E0B6EFDC41 /* libPods-MarvelTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 591F8448FAC3F6317797BA85 /* libPods-MarvelTests.a */; };
+		74AD30E03958C2079B93BC18 /* VASStoryboardAssembly.m in Sources */ = {isa = PBXBuildFile; fileRef = 74AD35C77F0460EEE7C39517 /* VASStoryboardAssembly.m */; };
 		74AD310768B2A5588A873FE3 /* VASRouter.m in Sources */ = {isa = PBXBuildFile; fileRef = 74AD37EB141650C8A9C062C2 /* VASRouter.m */; };
 		74AD31890B4B5733C030627B /* VASComicSummary.m in Sources */ = {isa = PBXBuildFile; fileRef = 74AD3D5C89EDFD70EB1E91FD /* VASComicSummary.m */; };
 		74AD32256F497064314B9FEA /* VASUrl.m in Sources */ = {isa = PBXBuildFile; fileRef = 74AD389EBB3BDE98A654C9F1 /* VASUrl.m */; };
@@ -80,6 +81,7 @@
 		74AD3540A96208A8C1FBE034 /* VASStorySummary.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VASStorySummary.m; sourceTree = "<group>"; };
 		74AD35853896A06A01F38BAD /* VASMarvelAPIServiceProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VASMarvelAPIServiceProtocol.h; sourceTree = "<group>"; };
 		74AD35A9F11A5DDAD6BA3A1F /* VASStorySummary.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VASStorySummary.h; sourceTree = "<group>"; };
+		74AD35C77F0460EEE7C39517 /* VASStoryboardAssembly.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VASStoryboardAssembly.m; sourceTree = "<group>"; };
 		74AD35F4BD7184E973788F03 /* VASSessionManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VASSessionManager.h; sourceTree = "<group>"; };
 		74AD364953E9B9869FB5705A /* VASUrl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VASUrl.h; sourceTree = "<group>"; };
 		74AD3668B4B7C6F0203F4109 /* VASSeriesList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VASSeriesList.h; sourceTree = "<group>"; };
@@ -119,6 +121,7 @@
 		74AD3E2E20C7A20D6A60E8B3 /* VASParentAssembly.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VASParentAssembly.h; sourceTree = "<group>"; };
 		74AD3EA88B9F16A7E99E3272 /* VASJSONResponseSerializer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VASJSONResponseSerializer.m; sourceTree = "<group>"; };
 		74AD3EAF9E2E0C0670FDB96B /* VASComicSummary.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VASComicSummary.h; sourceTree = "<group>"; };
+		74AD3EDC303932787C2A7520 /* VASStoryboardAssembly.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VASStoryboardAssembly.h; sourceTree = "<group>"; };
 		7E9FB7D4EE5A1EB6B5EE5FD2 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		B719C54B1CA1F22300BBA15F /* Marvel.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Marvel.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B719C54F1CA1F22300BBA15F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -299,6 +302,7 @@
 				74AD3E3E52FCA8018209031A /* VASMarvelCharactersUserStoryAssembly */,
 				74AD3CB97FB654EB479A9D29 /* VASApplicationAssembly */,
 				74AD3381A7CAB031998A826E /* VASParentAssembly */,
+				74AD36E37B48F9F55AF1AF09 /* VASStoryboardAssembly */,
 			);
 			path = "Presentation Level";
 			sourceTree = "<group>";
@@ -356,6 +360,15 @@
 				74AD364953E9B9869FB5705A /* VASUrl.h */,
 			);
 			path = VASUrl;
+			sourceTree = "<group>";
+		};
+		74AD36E37B48F9F55AF1AF09 /* VASStoryboardAssembly */ = {
+			isa = PBXGroup;
+			children = (
+				74AD35C77F0460EEE7C39517 /* VASStoryboardAssembly.m */,
+				74AD3EDC303932787C2A7520 /* VASStoryboardAssembly.h */,
+			);
+			path = VASStoryboardAssembly;
 			sourceTree = "<group>";
 		};
 		74AD372C4EF7C12AEC00D187 /* Marvel API Service */ = {
@@ -862,6 +875,7 @@
 				74AD3599309D403DD739A6F1 /* VASServiceComponentsAssembly.m in Sources */,
 				74AD372E6020305D4D92C190 /* VASParentAssembly.m in Sources */,
 				74AD3F0D0ACAE2374DF1C798 /* VASApplicationAssembly.m in Sources */,
+				74AD30E03958C2079B93BC18 /* VASStoryboardAssembly.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

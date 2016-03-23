@@ -6,7 +6,8 @@
 #import "VASMarvelCharactersListViewController.h"
 
 
-@implementation VASMarvelCharactersListViewController {
+@implementation VASMarvelCharactersListViewController
 
-}
+
+
 @end

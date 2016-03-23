@@ -6,8 +6,12 @@
 #import <Foundation/Foundation.h>
 #import "VASRouterProtocol.h"
 
+@class TyphoonStoryboard;
+
 
 @interface VASRouter : NSObject <VASRouterProtocol>
+
+@property (strong, nonatomic, readonly) TyphoonStoryboard *storyboard;
 
 #pragma mark - Init
 - (nonnull instancetype)initWithNavigationController:(nonnull UINavigationController *)navigationController;

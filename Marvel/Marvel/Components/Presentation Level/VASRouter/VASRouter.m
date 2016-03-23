@@ -5,10 +5,12 @@
 
 #import <AFNetworking/AFURLResponseSerialization.h>
 #import "VASRouter.h"
+#import "TyphoonStoryboard.h"
 
 @interface VASRouter ()
 
 @property (strong, nonatomic) UINavigationController *navigationController;
+@property (strong, nonatomic, readwrite) TyphoonStoryboard *storyboard;
 
 @end
 

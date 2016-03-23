@@ -7,8 +7,11 @@
 #import "TyphoonAssembly.h"
 
 @class VASRouter;
+@class VASStoryboardAssembly;
 
 @interface VASParentAssembly : TyphoonAssembly
+
+@property (strong, nonatomic, readonly) VASStoryboardAssembly *storyboardAssembly;
 
 - (VASRouter *)router;
 

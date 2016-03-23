@@ -20,7 +20,6 @@
 {
     return [TyphoonDefinition withClass:[VASAppDelegate class] configuration:^(TyphoonDefinition *definition) {
         [definition injectProperty:@selector(router) with:[self.parentAssembly router]];
-        [definition injectProperty:@selector(marvelAPIService) with:[self.serviceComponentsAssembly marvelAPIService]];
     }];
 }
 

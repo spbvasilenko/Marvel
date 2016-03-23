@@ -5,8 +5,10 @@
 
 #import <UIKit/UIKit.h>
 
-@interface VASMarvelCharactersListViewController : UITableViewController
+@class TyphoonStoryboard;
 
+@interface VASStoryboardAssembly : NSObject
 
+- (TyphoonStoryboard *)mainStoryboard;
 
 @end
