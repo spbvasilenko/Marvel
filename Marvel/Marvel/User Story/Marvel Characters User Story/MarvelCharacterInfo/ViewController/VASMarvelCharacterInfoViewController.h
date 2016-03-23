@@ -8,8 +8,8 @@
 @class VASMarvelCharacterInfoViewModel;
 
 
-@interface VASMarvelCharacterInfoViewController : UIViewController
+@interface VASMarvelCharacterInfoViewController : UITableViewController
 
-@property (strong, nonatomic) VASMarvelCharacterInfoViewModel *viewModel;
+@property (strong, nonatomic, readonly) VASMarvelCharacterInfoViewModel *viewModel;
 
 @end

@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		711AF0264774A1E0B6EFDC41 /* libPods-MarvelTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 591F8448FAC3F6317797BA85 /* libPods-MarvelTests.a */; };
+		74AD307A38854598BD003490 /* VASCharacterTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 74AD39B873AF8BC8A0FB3A95 /* VASCharacterTableViewCell.m */; };
 		74AD30E03958C2079B93BC18 /* VASStoryboardAssembly.m in Sources */ = {isa = PBXBuildFile; fileRef = 74AD35C77F0460EEE7C39517 /* VASStoryboardAssembly.m */; };
 		74AD310768B2A5588A873FE3 /* VASRouterImpl.m in Sources */ = {isa = PBXBuildFile; fileRef = 74AD37EB141650C8A9C062C2 /* VASRouterImpl.m */; };
 		74AD31890B4B5733C030627B /* VASComicSummary.m in Sources */ = {isa = PBXBuildFile; fileRef = 74AD3D5C89EDFD70EB1E91FD /* VASComicSummary.m */; };
@@ -32,6 +33,7 @@
 		74AD3A400DC1442C502E3766 /* VASMarvelCharactersListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 74AD34F6871EE147759C3215 /* VASMarvelCharactersListViewController.m */; };
 		74AD3A51D933BABA115811F8 /* VASStoryList.m in Sources */ = {isa = PBXBuildFile; fileRef = 74AD394AF8027F66473C5E37 /* VASStoryList.m */; };
 		74AD3AFE200E7D196D5A70B8 /* VASSeriesSummary.m in Sources */ = {isa = PBXBuildFile; fileRef = 74AD31E09607137BA73C54A1 /* VASSeriesSummary.m */; };
+		74AD3BD303693D4101A7B7D6 /* UITableView+VASCellNibRegistration.m in Sources */ = {isa = PBXBuildFile; fileRef = 74AD386A38FD92A77DB2E4E8 /* UITableView+VASCellNibRegistration.m */; };
 		74AD3BE459A8C70813E6E366 /* VASAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 74AD3242B1EC82D0399B1D22 /* VASAppDelegate.m */; };
 		74AD3D145E3F0D6E738362B3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 74AD3746C934F35773123E9E /* LaunchScreen.storyboard */; };
 		74AD3D7B7FDAB66F8E152D0E /* VASCharacterDataWrapper.m in Sources */ = {isa = PBXBuildFile; fileRef = 74AD3D359DEFAC90F386ECFA /* VASCharacterDataWrapper.m */; };
@@ -85,10 +87,12 @@
 		74AD35853896A06A01F38BAD /* VASMarvelAPIService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VASMarvelAPIService.h; sourceTree = "<group>"; };
 		74AD35A9F11A5DDAD6BA3A1F /* VASStorySummary.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VASStorySummary.h; sourceTree = "<group>"; };
 		74AD35C77F0460EEE7C39517 /* VASStoryboardAssembly.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VASStoryboardAssembly.m; sourceTree = "<group>"; };
+		74AD35F1846C51BBB088C112 /* UITableView+VASCellNibRegistration.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITableView+VASCellNibRegistration.h"; sourceTree = "<group>"; };
 		74AD35F4BD7184E973788F03 /* VASSessionManagerImpl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VASSessionManagerImpl.h; sourceTree = "<group>"; };
 		74AD364953E9B9869FB5705A /* VASUrl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VASUrl.h; sourceTree = "<group>"; };
 		74AD3668B4B7C6F0203F4109 /* VASSeriesList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VASSeriesList.h; sourceTree = "<group>"; };
 		74AD36BE6FE6F04E2A3D7BB9 /* VASMarvelCharactersUserStory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VASMarvelCharactersUserStory.h; sourceTree = "<group>"; };
+		74AD36CF2A392B51E9F2BC91 /* VASCharacterTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VASCharacterTableViewCell.h; sourceTree = "<group>"; };
 		74AD36F4ECA70D13E5364A13 /* VASCharacterDataContainer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VASCharacterDataContainer.m; sourceTree = "<group>"; };
 		74AD370F18E02C95F6658FD6 /* VASMarvelCharacterInfoViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VASMarvelCharacterInfoViewModel.h; sourceTree = "<group>"; };
 		74AD3732CDB0E598613D3D9D /* VASSeriesList.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VASSeriesList.m; sourceTree = "<group>"; };
@@ -96,6 +100,7 @@
 		74AD37EB141650C8A9C062C2 /* VASRouterImpl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VASRouterImpl.m; sourceTree = "<group>"; };
 		74AD3841F50627EE1B3B262A /* VASImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VASImage.m; sourceTree = "<group>"; };
 		74AD3863B598783240C80F9E /* NSString+MD5.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+MD5.m"; sourceTree = "<group>"; };
+		74AD386A38FD92A77DB2E4E8 /* UITableView+VASCellNibRegistration.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITableView+VASCellNibRegistration.m"; sourceTree = "<group>"; };
 		74AD386FEE0FD27671BDE32C /* VASCoreAssembly.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VASCoreAssembly.h; sourceTree = "<group>"; };
 		74AD389BE196C17A24BC1BF3 /* VASMarvelCharactersUserStoryAssembly.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VASMarvelCharactersUserStoryAssembly.h; sourceTree = "<group>"; };
 		74AD389EBB3BDE98A654C9F1 /* VASUrl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VASUrl.m; sourceTree = "<group>"; };
@@ -105,6 +110,7 @@
 		74AD394AF8027F66473C5E37 /* VASStoryList.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VASStoryList.m; sourceTree = "<group>"; };
 		74AD394BFE8147329AD3644F /* VASImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VASImage.h; sourceTree = "<group>"; };
 		74AD39B0305F11EBC50EFB2E /* VASSeriesSummary.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VASSeriesSummary.h; sourceTree = "<group>"; };
+		74AD39B873AF8BC8A0FB3A95 /* VASCharacterTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VASCharacterTableViewCell.m; sourceTree = "<group>"; };
 		74AD39E1D740409E745EE59F /* VASRouterImpl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VASRouterImpl.h; sourceTree = "<group>"; };
 		74AD3A011E4645ADE0B9EE8D /* VASMarvelCharactersListViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VASMarvelCharactersListViewModel.m; sourceTree = "<group>"; };
 		74AD3A0851BE6F7C43EBF834 /* VASEventList.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VASEventList.m; sourceTree = "<group>"; };
@@ -225,6 +231,15 @@
 			path = VASCharacterDataWrapper;
 			sourceTree = "<group>";
 		};
+		74AD318526D7881EBBEEF9A9 /* VASCharacterTableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				74AD39B873AF8BC8A0FB3A95 /* VASCharacterTableViewCell.m */,
+				74AD36CF2A392B51E9F2BC91 /* VASCharacterTableViewCell.h */,
+			);
+			path = VASCharacterTableViewCell;
+			sourceTree = "<group>";
+		};
 		74AD3187DAC0FE223EFDB66F /* Presentation Level */ = {
 			isa = PBXGroup;
 			children = (
@@ -247,6 +262,7 @@
 			children = (
 				74AD316C5C7CC42EBC321824 /* ViewModel */,
 				74AD329BD04DC636C69F36CD /* ViewController */,
+				74AD3A4B6F3B76569D8D2396 /* Views */,
 			);
 			path = MarvelCharactersList;
 			sourceTree = "<group>";
@@ -515,6 +531,14 @@
 			path = VASCharacterDataContainer;
 			sourceTree = "<group>";
 		};
+		74AD3A4B6F3B76569D8D2396 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				74AD318526D7881EBBEEF9A9 /* VASCharacterTableViewCell */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		74AD3AA1AF58D95A5AFD9FCC /* Common Models */ = {
 			isa = PBXGroup;
 			children = (
@@ -549,6 +573,8 @@
 			children = (
 				74AD3863B598783240C80F9E /* NSString+MD5.m */,
 				74AD34A4A0084CF1B0BC6819 /* NSString+MD5.h */,
+				74AD386A38FD92A77DB2E4E8 /* UITableView+VASCellNibRegistration.m */,
+				74AD35F1846C51BBB088C112 /* UITableView+VASCellNibRegistration.h */,
 			);
 			path = Categories;
 			sourceTree = "<group>";
@@ -906,6 +932,8 @@
 				74AD30E03958C2079B93BC18 /* VASStoryboardAssembly.m in Sources */,
 				74AD36BE4D8693F2CD486252 /* NSString+MD5.m in Sources */,
 				74AD3DAF490F91C87162389B /* VASMarvelCharactersUserStoryAssembly.m in Sources */,
+				74AD3BD303693D4101A7B7D6 /* UITableView+VASCellNibRegistration.m in Sources */,
+				74AD307A38854598BD003490 /* VASCharacterTableViewCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

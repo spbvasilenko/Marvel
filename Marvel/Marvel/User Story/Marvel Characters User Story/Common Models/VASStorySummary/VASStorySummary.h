@@ -8,7 +8,7 @@
 @interface VASStorySummary : MTLModel <MTLJSONSerializing>
 
 // The path to the individual story resource.,
-@property (copy, nonatomic, readonly) NSString *resourceURI;
+//@property (copy, nonatomic, readonly) NSString *resourceURI;
 // The canonical name of the story.,
 @property (copy, nonatomic, readonly) NSString *name;
 // The type of the story (interior or cover).

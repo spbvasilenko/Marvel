@@ -11,6 +11,7 @@
 #import "VASMarvelCharacterInfoViewModel.h"
 #import "VASStoryboardAssembly.h"
 #import "VASServiceComponentsAssembly.h"
+#import "VASParentAssembly.h"
 
 static NSString *const kVASMarvelCharactersListViewControllerID = @"marvelCharactersListViewController";
 static NSString *const kVASMarvelCharacterInfoViewControllerID = @"marvelCharacterInfoViewController";
@@ -19,6 +20,7 @@ static NSString *const kVASMarvelCharacterInfoViewControllerID = @"marvelCharact
 
 @property (strong, nonatomic, readwrite) VASStoryboardAssembly *storyboardAssembly;
 @property (strong, nonatomic, readwrite) VASServiceComponentsAssembly *serviceComponentsAssembly;
+@property (strong, nonatomic, readwrite) VASParentAssembly *parentAssembly;
 
 @end
 
@@ -44,7 +46,7 @@ static NSString *const kVASMarvelCharacterInfoViewControllerID = @"marvelCharact
                                parameters:^(TyphoonMethod *factoryMethod) {
                                    [factoryMethod injectParameterWith:kVASMarvelCharacterInfoViewControllerID];
                                } configuration:^(TyphoonFactoryDefinition *definition) {
-                [definition injectProperty:@selector(viewModel) with:[self marvelCharacterInfoViewControllerWithCharacter:character]];
+                [definition injectProperty:@selector(viewModel) with:[self marvelCharacterInfoViewModelWithCharacter:character]];
             }];
 }
 
@@ -54,6 +56,7 @@ static NSString *const kVASMarvelCharacterInfoViewControllerID = @"marvelCharact
 {
     return [TyphoonDefinition withClass:[VASMarvelCharactersListViewModel class] configuration:^(TyphoonDefinition *definition) {
         [definition injectProperty:@selector(marvelAPIService) with:[self.serviceComponentsAssembly marvelAPIService]];
+        [definition injectProperty:@selector(router) with:[self.parentAssembly router]];
     }];
 }
 
@@ -61,6 +64,10 @@ static NSString *const kVASMarvelCharacterInfoViewControllerID = @"marvelCharact
 {
     return [TyphoonDefinition withClass:[VASMarvelCharacterInfoViewModel class] configuration:^(TyphoonDefinition *definition) {
         [definition injectProperty:@selector(marvelAPIService) with:[self.serviceComponentsAssembly marvelAPIService]];
+        [definition injectProperty:@selector(router) with:[self.parentAssembly router]];
+        [definition useInitializer:@selector(initWithCharacter:) parameters:^(TyphoonMethod *initializer) {
+            [initializer injectParameterWith:character];
+        }];
     }];
 }
 

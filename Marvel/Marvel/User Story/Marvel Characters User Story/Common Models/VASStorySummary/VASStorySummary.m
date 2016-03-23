@@ -3,6 +3,7 @@
 // Copyright (c) 2016 Igor Vasilenko. All rights reserved.
 //
 
+#import "MTLModel.h"
 #import "VASStorySummary.h"
 
 
@@ -10,7 +11,12 @@
 
 + (NSDictionary *)JSONKeyPathsByPropertyKey
 {
-    return @{};
+    return
+            @{
+                    //NSStringFromSelector(@selector(resourceURI)) : @"resourceURI",
+                    NSStringFromSelector(@selector(name)) : @"name",
+                    NSStringFromSelector(@selector(type)) : @"type"
+            };
 }
 
 @end

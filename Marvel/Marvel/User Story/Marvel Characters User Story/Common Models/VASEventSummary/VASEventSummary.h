@@ -8,7 +8,7 @@
 @interface VASEventSummary : MTLModel <MTLJSONSerializing>
 
 // The path to the individual event resource.,
-@property (copy, nonatomic, readonly) NSString *resourceURI;
+//@property (copy, nonatomic, readonly) NSString *resourceURI;
 // The canonical name of the event.
 @property (copy, nonatomic, readonly) NSString *name;
 

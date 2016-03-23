@@ -3,6 +3,7 @@
 // Copyright (c) 2016 Igor Vasilenko. All rights reserved.
 //
 
+#import "MTLModel.h"
 #import "VASEventList.h"
 #import "VASEventSummary.h"
 
@@ -11,7 +12,18 @@
 
 + (NSDictionary *)JSONKeyPathsByPropertyKey
 {
-    return @{};
+    return
+            @{
+                    NSStringFromSelector(@selector(available)) : @"available",
+                    NSStringFromSelector(@selector(returned)) : @"returned",
+                    //NSStringFromSelector(@selector(collectionURI)) : @"collectionURI",
+                    NSStringFromSelector(@selector(items)) : @"items"
+            };
+}
+
++ (NSValueTransformer *)itemsJSONTransformer
+{
+    return [MTLJSONAdapter arrayTransformerWithModelClass:[VASEventSummary class]];
 }
 
 @end

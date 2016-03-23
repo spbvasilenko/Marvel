@@ -3,6 +3,7 @@
 // Copyright (c) 2016 Igor Vasilenko. All rights reserved.
 //
 
+#import "MTLModel.h"
 #import "VASCharacterDataWrapper.h"
 #import "VASCharacterDataContainer.h"
 
@@ -11,7 +12,16 @@
 
 + (NSDictionary *)JSONKeyPathsByPropertyKey
 {
-    return @{};
+    return
+            @{
+                    NSStringFromSelector(@selector(code)) : @"code",
+                    NSStringFromSelector(@selector(status)) : @"status",
+                    NSStringFromSelector(@selector(copyright)) : @"copyright",
+                    NSStringFromSelector(@selector(attributionText)) : @"attributionText",
+                    NSStringFromSelector(@selector(attributionHTML)) : @"attributionHTML",
+                    NSStringFromSelector(@selector(data)) : @"data",
+                    NSStringFromSelector(@selector(etag)) : @"etag"
+            };
 }
 
 + (NSValueTransformer *)dataJSONTransformer

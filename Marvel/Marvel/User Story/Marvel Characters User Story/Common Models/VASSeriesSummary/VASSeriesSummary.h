@@ -8,7 +8,7 @@
 @interface VASSeriesSummary : MTLModel <MTLJSONSerializing>
 
 // The path to the individual series resource.,
-@property (copy, nonatomic, readonly) NSString *resourceURI;
+//@property (copy, nonatomic, readonly) NSString *resourceURI;
 // The canonical name of the series.
 @property (copy, nonatomic, readonly) NSString *name;
 

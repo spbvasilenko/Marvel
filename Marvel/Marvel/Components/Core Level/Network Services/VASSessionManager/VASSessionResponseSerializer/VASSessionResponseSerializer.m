@@ -68,7 +68,8 @@
     if ([JSON isKindOfClass:[NSArray class]]) {
         return [MTLJSONAdapter modelsOfClass:resultClass fromJSONArray:JSON error:&error];
     }
-    return [MTLJSONAdapter modelOfClass:resultClass fromJSONDictionary:JSON[key] error:&error];
+
+    return [MTLJSONAdapter modelOfClass:resultClass fromJSONDictionary:JSON error:&error];
 }
 
 #pragma mark - Perform block

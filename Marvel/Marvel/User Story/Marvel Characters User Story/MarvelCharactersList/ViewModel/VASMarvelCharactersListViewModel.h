@@ -8,12 +8,17 @@
 
 @class RACCommand;
 @protocol VASMarvelAPIService;
+@class VASCharacter;
+@protocol VASRouter;
 
 @interface VASMarvelCharactersListViewModel : RVMViewModel
 
 @property (strong, nonatomic, readonly) id <VASMarvelAPIService> marvelAPIService;
+@property (strong, nonatomic, readonly) id <VASRouter> router;
 
-@property (strong, nonatomic, readonly) NSArray *charactersCellModels;
+@property (strong, nonatomic, readonly) NSArray <VASCharacter *> *characters;
 @property (strong, nonatomic, readonly) RACCommand *reloadCharactersCommand;
+
+- (void)openCharacterInfoViewControllerWithCharacter:(VASCharacter *)character;
 
 @end

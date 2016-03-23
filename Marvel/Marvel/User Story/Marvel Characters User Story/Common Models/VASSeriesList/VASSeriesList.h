@@ -14,7 +14,7 @@
 // The number of issues returned in this collection (up to 20).,
 @property (assign, nonatomic, readonly) NSInteger returned;
 // The path to the full list of issues in this collection.,
-@property (copy, nonatomic, readonly) NSString *collectionURI;
+//@property (copy, nonatomic, readonly) NSString *collectionURI;
 // The list of returned issues in this collection.
 @property (strong, nonatomic, readonly) NSArray <VASSeriesSummary *> *items;
 

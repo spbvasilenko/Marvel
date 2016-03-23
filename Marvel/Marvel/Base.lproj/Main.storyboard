@@ -6,23 +6,33 @@
     </dependencies>
     <scenes>
         <!--Marvel Character Info View Controller-->
-        <scene sceneID="Pcj-RR-QSd">
+        <scene sceneID="dxD-UK-Yx1">
             <objects>
-                <viewController storyboardIdentifier="marvelCharacterInfoViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="cDK-Xb-3I9" customClass="VASMarvelCharacterInfoViewController" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="5bp-dH-k95"/>
-                        <viewControllerLayoutGuide type="bottom" id="4ke-QZ-yRf"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="EzT-pk-TjK">
+                <tableViewController storyboardIdentifier="marvelCharacterInfoViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="7nk-va-vxO" customClass="VASMarvelCharacterInfoViewController" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="WyL-m3-zIc">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    </view>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="VASCharacterTableViewCell" id="EdP-ic-4P8" customClass="VASCharacterTableViewCell">
+                                <rect key="frame" x="0.0" y="28" width="320" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="EdP-ic-4P8" id="PSD-VG-A5e">
+                                    <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="7nk-va-vxO" id="3Bq-xB-ak6"/>
+                            <outlet property="delegate" destination="7nk-va-vxO" id="oyU-nM-3eB"/>
+                        </connections>
+                    </tableView>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="yeq-1B-S45" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qu1-lX-PSG" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="198" y="202"/>
+            <point key="canvasLocation" x="68" y="207"/>
         </scene>
         <!--Marvel Characters List View Controller-->
         <scene sceneID="GDH-dw-Qay">
@@ -33,7 +43,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="mtx-MA-jkL">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="VASCharacterTableViewCell" id="mtx-MA-jkL" customClass="VASCharacterTableViewCell">
                                 <rect key="frame" x="0.0" y="28" width="320" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="mtx-MA-jkL" id="J3n-OE-9wu">

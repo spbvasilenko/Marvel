@@ -7,12 +7,17 @@
 #import "VASMarvelCharactersListViewModel.h"
 #import "RACCommand.h"
 #import "VASMarvelAPIService.h"
+#import "VASCharacter.h"
+#import "VASCharacterDataWrapper.h"
+#import "VASCharacterDataContainer.h"
+#import "VASRouter.h"
 #import <Typhoon/Typhoon.h>
 
 @interface VASMarvelCharactersListViewModel ()
 
 @property (strong, nonatomic, readwrite) id <VASMarvelAPIService> marvelAPIService;
-@property (strong, nonatomic, readwrite) NSArray *charactersCellModels;
+@property (strong, nonatomic, readwrite) id <VASRouter> router;
+@property (strong, nonatomic, readwrite) NSArray *characters;
 
 @end
 
@@ -26,11 +31,16 @@
 - (RACCommand *)reloadCharactersCommand
 {
     return [[RACCommand alloc] initWithSignalBlock:^RACSignal *(id input) {
-        return [self.marvelAPIService.rac_getMarvelCharacters map:^id(NSArray *characters) {
-            self.charactersCellModels = [characters copy];
-            return nil;
+        return [self.marvelAPIService.rac_getMarvelCharacters doNext:^(VASCharacterDataWrapper *characterDataWrapper) {
+            self.characters = [characterDataWrapper.data.results copy];
         }];
     }];
 }
+
+- (void)openCharacterInfoViewControllerWithCharacter:(VASCharacter *)character
+{
+    [self.router openMarvelCharacterInfoControllerWithCharacter:character];
+}
+
 
 @end

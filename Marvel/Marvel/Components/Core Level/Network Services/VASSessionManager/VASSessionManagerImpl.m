@@ -23,7 +23,6 @@
 {
     if (self == [super initWithSessionConfiguration:configuration]) {
         _sessionResponseSerializer = [VASSessionResponseSerializer serializer];
-        self.responseSerializer = [[VASJSONResponseSerializer alloc] init];
     }
     return self;
 }
@@ -117,13 +116,13 @@
     }
 
     NSMutableURLRequest *modifiedRequest = urlRequest.mutableCopy;
-    AFNetworkReachabilityManager *reachability = self.reachabilityManager;
+    AFNetworkReachabilityManager *reachability = [AFNetworkReachabilityManager sharedManager];
     if (!reachability.isReachable)
     {
         modifiedRequest.cachePolicy = NSURLRequestReturnCacheDataDontLoad;
     }
 
-    NSURLSessionDataTask *dataTask = [self dataTaskWithRequest:modifiedRequest
+    NSURLSessionDataTask *dataTask = [self dataTaskWithRequest:urlRequest
                                              completionHandler:^(NSURLResponse *response, id responseObject, NSError *error) {
                                                  if (error)
                                                  {

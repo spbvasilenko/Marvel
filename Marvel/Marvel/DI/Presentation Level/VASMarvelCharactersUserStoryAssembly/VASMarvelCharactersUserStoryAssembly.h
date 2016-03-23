@@ -9,11 +9,13 @@
 
 @class VASStoryboardAssembly;
 @class VASServiceComponentsAssembly;
+@class VASParentAssembly;
 
 
 @interface VASMarvelCharactersUserStoryAssembly : TyphoonAssembly <VASMarvelCharactersUserStory>
 
 @property (strong, nonatomic, readonly) VASServiceComponentsAssembly *serviceComponentsAssembly;
 @property (strong, nonatomic, readonly) VASStoryboardAssembly *storyboardAssembly;
+@property (strong, nonatomic, readonly) VASParentAssembly *parentAssembly;
 
 @end
